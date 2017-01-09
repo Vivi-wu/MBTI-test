@@ -1,3 +1,5 @@
+(function(){
+
 var context = {
   latitude: [
     {
@@ -57,5 +59,37 @@ var context = {
   ]
 };
 
-document.querySelector('form').innerHTML = Handlebars.templates.choice(context);
+var myForm = document.getElementById('myForm');
 
+var mindpower = getinfo = makedecision = lifestyle = {};
+
+function account(ele) {
+  var len = document.querySelectorAll('#'+ ele + ' [type="radio"]').length/2,
+        i = a = b = 0;
+
+  for (i; i < len; i++) {
+    if (document.forms['myForm'].elements[ele + i].value === "true") {
+      a++
+    } else {
+      b++
+    }
+  }
+
+  return {A: a, B: b}
+}
+
+myForm.innerHTML = Handlebars.templates.choice(context);
+
+myForm.addEventListener('submit', function(event){
+  event.preventDefault()
+  if (!event.target.checkValidity()) {
+    alert('Please, fill the form'); // error message
+  } else {
+    mindpower = account('mindpower')
+    getinfo = account('mindpower')
+    makedecision = account('mindpower')
+    lifestyle = account('mindpower')
+  }
+});
+
+})()

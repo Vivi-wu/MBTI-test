@@ -16,7 +16,7 @@ templates['choice'] = template({"1":function(container,depth0,helpers,partials,d
   return "		<li>\n			<label><input type=\"radio\" name=\""
     + alias2(alias1((depths[1] != null ? depths[1].type : depths[1]), depth0))
     + alias2(((helper = (helper = helpers.index || (data && data.index)) != null ? helper : alias4),(typeof helper === alias5 ? helper.call(alias3,{"name":"index","hash":{},"data":data}) : helper)))
-    + "\" value=\"true\">"
+    + "\" value=\"true\" required>"
     + alias2(((helper = (helper = helpers.A || (depth0 != null ? depth0.A : depth0)) != null ? helper : alias4),(typeof helper === alias5 ? helper.call(alias3,{"name":"A","hash":{},"data":data}) : helper)))
     + "</label>\n			<label><input type=\"radio\" name=\""
     + alias2(alias1((depths[1] != null ? depths[1].type : depths[1]), depth0))

@@ -4,7 +4,7 @@
 	<ol id="{{type}}">
 		{{#each choice}}
 		<li>
-			<label><input type="radio" name="{{../type}}{{@index}}" value="true">{{A}}</label>
+			<label><input type="radio" name="{{../type}}{{@index}}" value="true" required>{{A}}</label>
 			<label><input type="radio" name="{{../type}}{{@index}}" value="false">{{B}}</label>
 		</li>
 		{{/each}}
