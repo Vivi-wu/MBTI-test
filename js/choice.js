@@ -16,17 +16,17 @@ templates['choice'] = template({"1":function(container,depth0,helpers,partials,d
   return "		<li>\n			<label><input type=\"radio\" name=\""
     + alias2(alias1((depths[1] != null ? depths[1].type : depths[1]), depth0))
     + alias2(((helper = (helper = helpers.index || (data && data.index)) != null ? helper : alias4),(typeof helper === alias5 ? helper.call(alias3,{"name":"index","hash":{},"data":data}) : helper)))
-    + "\" value=\"true\" required>"
+    + "\" value=\"true\" required><span></span>"
     + alias2(((helper = (helper = helpers.A || (depth0 != null ? depth0.A : depth0)) != null ? helper : alias4),(typeof helper === alias5 ? helper.call(alias3,{"name":"A","hash":{},"data":data}) : helper)))
     + "</label>\n			<label><input type=\"radio\" name=\""
     + alias2(alias1((depths[1] != null ? depths[1].type : depths[1]), depth0))
     + alias2(((helper = (helper = helpers.index || (data && data.index)) != null ? helper : alias4),(typeof helper === alias5 ? helper.call(alias3,{"name":"index","hash":{},"data":data}) : helper)))
-    + "\" value=\"false\">"
+    + "\" value=\"false\"><span></span>"
     + alias2(((helper = (helper = helpers.B || (depth0 != null ? depth0.B : depth0)) != null ? helper : alias4),(typeof helper === alias5 ? helper.call(alias3,{"name":"B","hash":{},"data":data}) : helper)))
     + "</label>\n		</li>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1;
 
-  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.latitude : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.dichotomy : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"useData":true,"useDepths":true});
 })();

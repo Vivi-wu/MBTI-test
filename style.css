@@ -1,12 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
-	font-size: 16px;
+    font-size: 16px;
+}
+@media (max-width: 544px) {
+    html {
+        font-size: 12px;
+    }
+    main {
+        width: 95%;
+    }
+    li {
+        margin-bottom: 2rem;
+    }
+    li>label {
+        display: block;
+        margin-bottom: 1rem;
+    }
+    li>label:first-child {
+        margin-right: 0;
+    }
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-	font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+}
+
+main {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    margin-bottom: 4rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+li {
+    margin-bottom: 1rem;
 }
 
 label {
-	cursor: pointer;
+    cursor: pointer;
+    position: relative;
+}
+
+[type="radio"] {
+    position: absolute;
+    z-index: 1;
+}
+
+li>label:first-child {
+    margin-right: 2rem;
+}
+
+label>span {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid blue;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+label>[type="radio"]:checked ~ span {
+    background-color: red;
+}
+
+[type="submit"] {
+    background-color: blue;
+    border: 1px solid;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+    padding: 0.75rem 1.75rem;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+#result {
+    display: none;
+}
+
+.reference {
+    display: inline-block;
+    min-width: 15rem;
+}
+
+.a-type,
+.b-type {
+    display: inline-block;
+    width: 15rem;
+    height: 1.2rem;
+    vertical-align: top;
+    border: 1px solid grey;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+}
+.a-type>div,
+.b-type>div {
+    height: 100%;
+}
+.a-type {
+    background-color: white;
+}
+.a-type>div {
+    background-color: blue;
+}
+.b-type {
+    background-color: blue;
+}
+.b-type>div {
+    background-color: white;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
 }
