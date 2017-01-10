@@ -113,7 +113,7 @@ myForm.innerHTML = Handlebars.templates.choice(context);
 myForm.addEventListener('submit', function(event){
   event.preventDefault()
   if (!event.target.checkValidity()) {
-    alert('Please, fill the form'); // error message
+    alert('好像还有条目没有选择哎～'); // error message
   } else {
     mindpower = drawchart(account('mindpower')) ? 'E' : 'I';
     getinfo = drawchart(account('getinfo')) ? 'S' : 'N';
@@ -121,6 +121,7 @@ myForm.addEventListener('submit', function(event){
     lifestyle = drawchart(account('lifestyle')) ? 'J' : 'P';
 
     document.querySelector('#result output').innerHTML = mindpower + getinfo + makedecision + lifestyle;
+    document.querySelector('[type="submit"]').disabled = true;
     document.getElementById('result').style.display = 'block';
     window.scrollTo(0, document.body.scrollHeight);
   }
