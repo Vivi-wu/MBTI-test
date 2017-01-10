@@ -72,6 +72,14 @@ label>[type="radio"]:checked ~ span {
     color: white;
     cursor: pointer;
 }
+[type="submit"]:disabled {
+    background-color: #b1b4a9;/*极浅墨绿*/
+}
+
+[type="radio"],
+[type="submit"] {
+    -webkit-appearance: none;/*解决iPhone safari上的圆角问题*/
+}
 
 a {
     color: #b1b4a9;
@@ -130,7 +138,7 @@ a:hover {
 
 @media (max-width: 544px) {
     html {
-        font-size: 12px;
+        font-size: 14px;
     }
     main {
         width: 95%;
