@@ -20,20 +20,27 @@ main {
 }
 
 h1 {
-    margin-bottom: 4rem;
+    margin-bottom: 4.5rem;
 }
 
 section {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+
+
+ol {
+    padding-left: 25px;
 }
 
 li {
     margin-bottom: 1.5rem;
+    padding-left: 5px;
 }
 
 label {
     cursor: pointer;
     position: relative;
+    line-height: 1.5;
 }
 
 [type="radio"] {
@@ -55,7 +62,7 @@ label>span {
     border-radius: 50%;
     border: 3px solid #80943d;/*浅墨绿*/
     vertical-align: sub;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 label>[type="radio"]:checked ~ span {
@@ -67,7 +74,7 @@ label>[type="radio"]:checked ~ span {
     border: 1px solid;
     border-radius: 3px;
     margin-bottom: 2rem;
-    padding: 1rem 2rem;
+    padding: 0.8rem 2rem;
     font-size: 1rem;
     color: white;
     cursor: pointer;
@@ -102,10 +109,11 @@ a:hover {
     display: inline-block;
     width: 20rem;
     height: 1.5rem;
-    vertical-align: top;
+    vertical-align: text-bottom;
     border: 1px solid #80943d;
     border-radius: 2px;
-    margin-right: 0.5rem;
+    margin-right: 1.25rem;
+    margin-left: 0.75rem;
 }
 .a-type>div,
 .b-type>div {
@@ -132,8 +140,8 @@ a:hover {
     text-align: right;
 }
 
-.r-left {
-    margin-bottom: 1rem;
+.mb-1-5 {
+    margin-bottom: 1.5rem;
 }
 
 @media (max-width: 544px) {
@@ -142,9 +150,6 @@ a:hover {
     }
     main {
         width: 95%;
-    }
-    ol {
-        padding-left: 2rem;
     }
     li {
         margin-bottom: 2rem;
@@ -155,6 +160,13 @@ a:hover {
     }
     li>label:first-child {
         margin-right: 0;
+    }
+    label>span {
+        vertical-align: text-bottom;
+    }
+    .a-type, .b-type {
+        margin-right: 0;
+        margin-left: 0;
     }
     .a-type,.b-type,.reference, [type="submit"] {
         width: 100%;
