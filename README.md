@@ -2,6 +2,8 @@
 
 Simple MBTI online test, providing a direct result that you can reference later. 简单的MBTI职业性格测试。
 
+[Demo](https://vivi-wu.github.io/MBTI-test/)
+
 ## 关于编译
 
 HandlebarJS 官网上说：
